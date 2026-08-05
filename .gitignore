@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+.vscode/
+.env
+*.log
+*.pcapng.tmp
+Thumbs.db
+.DS_Store
