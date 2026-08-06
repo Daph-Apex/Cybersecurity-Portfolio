@@ -1,54 +1,79 @@
-# Lab 01 – Home Lab Setup
+# Lab 01 – Building a Cybersecurity Home Lab
 
 ## Objective
 
-Build a virtual cybersecurity lab for learning networking, Linux administration, packet analysis, and security testing.
+Build a secure virtual lab for learning Linux administration, networking, remote access, packet analysis, and cybersecurity tools.
 
 ---
 
-## Environment
+## Lab Environment
 
-Host Operating System:
-- Windows 11
+### Host Machine
 
-Virtualization:
+| Component | Details |
+|----------|---------|
+| Operating System | Windows 11 |
+| Memory | 16 GB RAM |
+| Processor | AMD Processor |
+
+### Virtualization Platform
+
 - Oracle VirtualBox
 
-Virtual Machines:
-- Kali Linux
-- Ubuntu Server
+### Virtual Machines
+
+| Machine | Purpose |
+|---------|---------|
+| Kali Linux | Attacker / Administration workstation |
+| Ubuntu Server 24.04 LTS | Target Linux server |
 
 ---
 
-## Objectives
+## Network Configuration
 
-- Install VirtualBox
-- Install Kali Linux
-- Install Ubuntu Server
-- Configure networking
-- Test connectivity
-- Enable SSH
-- Transfer files using SCP
+The virtual machines were configured using:
+
+- NAT Adapter
+- Host-only Adapter
+
+This configuration provided internet connectivity while allowing secure communication between the virtual machines.
+
+---
+
+## Tasks Completed
+
+- Installed Oracle VirtualBox
+- Installed Kali Linux
+- Installed Ubuntu Server
+- Configured virtual networking
+- Verified network connectivity
+- Connected from Kali to Ubuntu using SSH
+- Successfully transferred files using SCP
 
 ---
 
 ## Tools Used
 
-- VirtualBox
+- Oracle VirtualBox
 - Kali Linux
 - Ubuntu Server
 - SSH
 - SCP
-- Ping
+- Linux Terminal
 
 ---
 
-## Status
+## Skills Demonstrated
 
-🟡 In Progress
+- Virtualization
+- Linux Administration
+- Network Configuration
+- Remote Access
+- Secure File Transfer
+- Basic Troubleshooting
 
 ---
 
 ## Lessons Learned
 
-This lab documents the setup of my cybersecurity learning environment and establishes the foundation for future networking, Linux, and security exercises.
+Building a home lab provides a safe environment for learning and testing cybersecurity concepts. During this lab, I gained practical experience configuring virtual machines, establishing secure remote connections with SSH, and transferring files using SCP. This environment will serve as the foundation for future networking, security monitoring, and penetration testing labs.
