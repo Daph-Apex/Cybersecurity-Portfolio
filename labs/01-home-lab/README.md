@@ -50,6 +50,28 @@ This configuration provided internet connectivity while allowing secure communic
 - Connected from Kali to Ubuntu using SSH
 - Successfully transferred files using SCP
 
+## Configuring VirtualBox
+
+The virtual environment consists of two virtual machines connected using NAT and Host-only networking.
+
+![VirtualBox](screenshots/01-virtualbox-overview.png)
+
+---
+
+## Verifying Connectivity
+
+Connectivity between Kali Linux and Ubuntu Server was verified using ICMP.
+
+![Ping](screenshots/07-successful-ping.png)
+
+---
+
+## Remote Access
+
+SSH was configured successfully, allowing secure remote administration.
+
+![SSH](screenshots/08-ssh-login.png)
+
 ---
 
 ## Tools Used
