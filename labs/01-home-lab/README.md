@@ -25,7 +25,7 @@ Build a secure virtual lab for learning Linux administration, networking, remote
 | Machine | Purpose |
 |---------|---------|
 | Kali Linux | Attacker / Administration workstation |
-| Ubuntu Server 24.04 LTS | Target Linux server |
+| Ubuntu Server 26.04 LTS | Target Linux server |
 
 ---
 
