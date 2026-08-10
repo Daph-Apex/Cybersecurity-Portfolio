@@ -60,7 +60,9 @@ The virtual environment consists of two virtual machines connected using NAT and
 
 ## Verifying Connectivity
 
-Connectivity between Kali Linux and Ubuntu Server was verified using ICMP.
+Network connectivity between Kali Linux and Ubuntu Server was verified using the `ping` command.
+
+Successful ICMP echo replies confirmed that the two virtual machines could communicate over the Host-only network before configuring SSH.
 
 ![Ping](screenshots/07-successful-ping.png)
 
@@ -68,9 +70,22 @@ Connectivity between Kali Linux and Ubuntu Server was verified using ICMP.
 
 ## Remote Access
 
-SSH was configured successfully, allowing secure remote administration.
+SSH was enabled on the Ubuntu Server, allowing secure remote administration from the Kali Linux virtual machine.
+
+After verifying connectivity, an SSH session was established successfully and later used for secure file transfers with SCP.
 
 ![SSH](screenshots/08-ssh-login.png)
+
+---
+
+## Commands Used
+
+| Command | Purpose |
+|---------|---------|
+| `ip addr` | Display network interface information |
+| `ping` | Verify network connectivity |
+| `ssh` | Establish a secure remote connection |
+| `scp` | Transfer files securely between virtual machines |
 
 ---
 
