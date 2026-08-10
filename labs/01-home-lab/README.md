@@ -31,12 +31,12 @@ Build a secure virtual lab for learning Linux administration, networking, remote
 
 ## Network Configuration
 
-The virtual machines were configured using:
+Each virtual machine was configured with:
 
-- NAT Adapter
-- Host-only Adapter
+- **NAT Adapter** to provide internet connectivity for software updates and package installation.
+- **Host-only Adapter** to enable isolated communication between the virtual machines without exposing the lab directly to the external network.
 
-This configuration provided internet connectivity while allowing secure communication between the virtual machines.
+This configuration created a controlled environment suitable for practicing networking and cybersecurity tasks.
 
 ---
 
