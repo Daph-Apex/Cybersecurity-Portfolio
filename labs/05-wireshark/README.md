@@ -261,3 +261,19 @@ The exercise also reinforced the relationship between MAC addresses, IP addresse
 ## Next Steps
 
 Future packet-analysis exercises will examine TCP, HTTP, DNS, and other network traffic to develop more practical network monitoring and security-analysis skills.
+
+---
+
+## Evidence
+
+### ICMP Echo Request
+
+The Wireshark capture shows the ICMP Echo Request sent from Kali Linux to Ubuntu.
+
+![Wireshark ICMP Echo Request](screenshots/wireshark-icmp-request.png)
+
+### ICMP Echo Reply
+
+The corresponding Echo Reply was captured from Ubuntu back to Kali Linux.
+
+![Wireshark ICMP Echo Reply](screenshots/wireshark-icmp-reply.png)
