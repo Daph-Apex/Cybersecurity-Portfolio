@@ -232,3 +232,19 @@ The exercise also demonstrated the importance of interpreting scan results caref
 ## Next Steps
 
 Future exercises will examine the identified services in greater detail and introduce packet-level analysis using Wireshark.
+
+---
+
+## Evidence
+
+### Basic Nmap Scan
+
+The initial Nmap scan identified the target host and discovered open TCP ports.
+
+![Nmap basic scan](screenshots/nmap-basic-scan.png)
+
+### Service and Version Detection
+
+Nmap service detection identified the software associated with the exposed services.
+
+![Nmap service detection](screenshots/nmap-service-detection.png)
