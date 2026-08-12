@@ -8,7 +8,7 @@ The objectives were to:
 
 - Verify network connectivity
 - Identify an active host
-- Discover open TCP ports
+- Discover open TCP services among Nmap's default TCP port set
 - Identify running services and versions
 - Validate an exposed HTTP service
 
@@ -80,12 +80,12 @@ Host is up (0.012s latency).
 Not shown: 998 closed tcp ports
 ```
 
-The scan identified two open TCP services:
+The scan identified two open TCP services among the ports tested:
 
 - TCP/22 – SSH
 - TCP/80 – HTTP
 
-The target's MAC address was also identified as an Oracle VirtualBox virtual NIC.
+The scan also identified the target's MAC address and associated it with an Oracle VirtualBox virtual NIC.
 
 ---
 
@@ -143,7 +143,7 @@ The investigation followed this sequence:
 ```text
 Network connectivity
         ↓
-Host discovery
+Reachability verification
         ↓
 Port scanning
         ↓
