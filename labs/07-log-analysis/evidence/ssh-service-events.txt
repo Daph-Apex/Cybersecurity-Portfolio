@@ -1,0 +1,54 @@
+Aug 10 13:21:12 Ubuntu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 10 13:21:12 Ubuntu sshd[1791]: Server listening on 0.0.0.0 port 22.
+Aug 10 13:21:12 Ubuntu sshd[1791]: Server listening on :: port 22.
+Aug 10 13:21:12 Ubuntu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+-- Boot dd79b28308304f2cb90aa3f78a392b5b --
+Aug 11 23:48:54 Ubuntu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 11 23:48:54 Ubuntu sshd[1893]: Server listening on 0.0.0.0 port 22.
+Aug 11 23:48:54 Ubuntu sshd[1893]: Server listening on :: port 22.
+Aug 11 23:48:54 Ubuntu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Aug 11 23:53:19 Ubuntu sshd-session[4843]: Accepted password for abdul from 192.168.56.103 port 53278 ssh2
+Aug 11 23:53:19 Ubuntu sshd-session[4843]: pam_unix(sshd:session): session opened for user abdul(uid=1000) by abdul(uid=0)
+Aug 12 00:01:31 Ubuntu sshd-session[5586]: Accepted password for abdul from 192.168.56.103 port 49034 ssh2
+Aug 12 00:01:31 Ubuntu sshd-session[5586]: pam_unix(sshd:session): session opened for user abdul(uid=1000) by abdul(uid=0)
+Aug 12 00:01:31 Ubuntu sshd-session[5586]: pam_unix(sshd:session): session closed for user abdul
+Aug 12 00:03:45 Ubuntu sshd-session[5634]: Accepted password for abdul from 192.168.56.103 port 55656 ssh2
+Aug 12 00:03:45 Ubuntu sshd-session[5634]: pam_unix(sshd:session): session opened for user abdul(uid=1000) by abdul(uid=0)
+Aug 12 02:37:40 Ubuntu sshd[1893]: Received signal 15; terminating.
+Aug 12 02:37:40 Ubuntu systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Aug 12 02:37:40 Ubuntu systemd[1]: ssh.service: Deactivated successfully.
+Aug 12 02:37:40 Ubuntu systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+-- Boot 225493894363498f82344f5053bae8ae --
+Aug 12 12:19:37 Ubuntu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 12 12:19:37 Ubuntu sshd[1761]: Server listening on 0.0.0.0 port 22.
+Aug 12 12:19:37 Ubuntu sshd[1761]: Server listening on :: port 22.
+Aug 12 12:19:37 Ubuntu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Aug 12 13:09:49 Ubuntu sshd-session[5467]: Connection closed by 192.168.56.103 port 43780
+Aug 12 13:12:19 Ubuntu sshd-session[5501]: banner exchange: Connection from 192.168.56.103 port 39040: invalid format
+Aug 12 13:12:22 Ubuntu sshd-session[5502]: Unable to negotiate with 192.168.56.103 port 39052: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group-exchange-sha256 [preauth]
+Aug 12 13:15:28 Ubuntu sshd-session[5517]: Unable to negotiate with 192.168.56.103 port 52402: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1 [preauth]
+Aug 12 13:24:42 Ubuntu sshd-session[5610]: banner exchange: Connection from 192.168.56.103 port 48810: invalid format
+Aug 12 13:24:42 Ubuntu sshd-session[5611]: Unable to negotiate with 192.168.56.103 port 48822: no matching key exchange method found. Their offer: diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group-exchange-sha256 [preauth]
+Aug 12 14:04:16 Ubuntu sshd[1761]: Received signal 15; terminating.
+Aug 12 14:04:16 Ubuntu systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Aug 12 14:04:16 Ubuntu systemd[1]: ssh.service: Deactivated successfully.
+Aug 12 14:04:16 Ubuntu systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+-- Boot f7c9ff933dca4655bc3253cb9f484082 --
+Aug 12 22:55:20 Ubuntu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 12 22:55:21 Ubuntu sshd[1845]: Server listening on 0.0.0.0 port 22.
+Aug 12 22:55:21 Ubuntu sshd[1845]: Server listening on :: port 22.
+Aug 12 22:55:21 Ubuntu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Aug 12 22:58:14 Ubuntu sshd-session[4773]: Accepted password for abdul from 192.168.56.103 port 57688 ssh2
+Aug 12 22:58:14 Ubuntu sshd-session[4773]: pam_unix(sshd:session): session opened for user abdul(uid=1000) by abdul(uid=0)
+Aug 12 23:16:48 Ubuntu sshd[1845]: Received signal 15; terminating.
+Aug 12 23:16:48 Ubuntu systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Aug 12 23:16:48 Ubuntu systemd[1]: ssh.service: Deactivated successfully.
+Aug 12 23:16:48 Ubuntu systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+-- Boot 30d4cb3c930a480292313eb4f78ceb39 --
+Aug 14 12:17:49 Ubuntu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 14 12:17:49 Ubuntu sshd[1769]: Server listening on 0.0.0.0 port 22.
+Aug 14 12:17:49 Ubuntu sshd[1769]: Server listening on :: port 22.
+Aug 14 12:17:49 Ubuntu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Aug 14 12:54:43 Ubuntu sshd-session[26687]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.103  user=abdul
+Aug 14 12:54:44 Ubuntu sshd-session[26687]: Failed password for abdul from 192.168.56.103 port 36462 ssh2
+Aug 14 12:55:02 Ubuntu sshd-session[26687]: Connection closed by authenticating user abdul 192.168.56.103 port 36462 [preauth]

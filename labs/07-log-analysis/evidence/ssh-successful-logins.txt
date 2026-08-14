@@ -1,0 +1,1 @@
+2026-08-12T22:58:14.662951+00:00 Ubuntu sshd-session[4773]: Accepted password for abdul from 192.168.56.103 port 57688 ssh2
