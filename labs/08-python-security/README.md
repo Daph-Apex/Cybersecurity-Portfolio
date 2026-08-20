@@ -1,0 +1,489 @@
+# Lab 08 – Python Security Automation
+
+## Overview
+
+This lab demonstrates the use of Python to automate basic security and system-information gathering on an Ubuntu Server.
+
+The objective was to move from manually executing individual Linux commands to using a reusable Python script that collects security-relevant information and produces a consolidated text report.
+
+The exercise was performed within the controlled cybersecurity home laboratory using Ubuntu Server as the target system.
+
+---
+
+## Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Target | Ubuntu Server 26.04 LTS |
+| Analysis Environment | Kali Linux |
+| Virtualization | Oracle VirtualBox |
+| Network | VirtualBox Host-only |
+| Python | Python 3.14.4 |
+| Python Path | `/usr/bin/python3` |
+
+All testing was performed against systems within the controlled laboratory environment.
+
+---
+
+## Objectives
+
+The objectives of this lab were to:
+
+- Develop a Python-based security automation script
+- Automate the execution of Linux security commands
+- Collect basic system information
+- Collect network configuration information
+- Identify listening network services
+- Gather routing information
+- Generate a consolidated security report
+- Preserve the report as evidence
+- Develop practical Python skills relevant to cybersecurity and SOC operations
+
+---
+
+## Python Environment
+
+The Python installation was verified before running the script.
+
+### Python Version
+
+```bash
+python3 --version
+```
+
+Output:
+
+```text
+Python 3.14.4
+```
+
+### Python Executable
+
+```bash
+which python3
+```
+
+Output:
+
+```text
+/usr/bin/python3
+```
+
+The Python runtime was also verified using:
+
+```bash
+python3 -c "import sys; print(sys.version)"
+```
+
+Output confirmed:
+
+```text
+3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]
+```
+
+The Python environment was successfully verified and the script executed without errors.
+
+---
+
+## Python Security Automation Script
+
+The main script developed for this lab is:
+
+```text
+Script/
+└── security_report.py
+```
+
+The script automates the collection of security-relevant information from the Ubuntu system.
+
+Instead of manually executing several Linux commands and recording the output separately, Python is used to execute the required commands and organise the results into a single security report.
+
+This provides a repeatable and efficient approach to basic system reconnaissance and security information gathering.
+
+---
+
+## Information Collected
+
+The script gathers information from several areas of the Ubuntu system.
+
+### 1. System Information
+
+The script collects basic information about the system and operating environment.
+
+This provides an initial system baseline that can be useful during security investigations.
+
+Information includes areas such as:
+
+- Host information
+- Operating system information
+- Kernel information
+- System configuration
+
+---
+
+### 2. Network Information
+
+The script collects information about the network configuration of the Ubuntu server.
+
+This includes information relating to:
+
+- Network interfaces
+- IP addresses
+- Network configuration
+- Network connectivity
+
+Network information is important during security investigations because it helps establish how a system communicates with other hosts.
+
+---
+
+### 3. Routing Information
+
+The script gathers routing information from the Ubuntu system.
+
+This can identify:
+
+- Default gateway
+- Network routes
+- Destination networks
+- Routing configuration
+
+Understanding routing information helps an analyst determine the network position of a host and how traffic is expected to flow.
+
+---
+
+### 4. Listening Services
+
+The script collects information about services listening for network connections.
+
+Listening services are security-relevant because they represent potential network-accessible attack surfaces.
+
+The information can be used to identify:
+
+- Listening ports
+- Network services
+- Local service bindings
+- Potentially exposed services
+
+---
+
+### 5. Disk Usage
+
+The script gathers disk-usage information from the system.
+
+Disk usage can provide useful operational and security information.
+
+For example, unexpectedly high disk utilisation may warrant further investigation during an incident because logs, temporary files, or malicious files can contribute to unusual storage consumption.
+
+---
+
+### 6. Memory Usage
+
+The script also collects memory-usage information.
+
+Memory information provides a basic snapshot of system resource utilisation and can support troubleshooting and security investigations.
+
+---
+
+## Script Execution
+
+The script was executed on the Ubuntu Server using Python 3.
+
+The execution was performed with:
+
+```bash
+python3 security_report.py
+```
+
+The script completed successfully without errors.
+
+The generated output was written to:
+
+```text
+evidence/security-report.txt
+```
+
+---
+
+## Generated Security Report
+
+The output generated by the Python script is stored as:
+
+```text
+evidence/
+└── security-report.txt
+```
+
+The report contains the information collected during execution.
+
+The report provides a persistent record of the system and network information gathered by the automation script.
+
+The overall workflow is:
+
+```text
+Ubuntu Server
+      |
+      v
+security_report.py
+      |
+      v
+Security Information Collection
+      |
+      v
+Command Output Processing
+      |
+      v
+security-report.txt
+```
+
+This demonstrates a complete automation workflow from information collection to evidence generation.
+
+---
+
+## Evidence
+
+Two primary artefacts were produced for this lab.
+
+### Python Script
+
+```text
+Script/security_report.py
+```
+
+This file contains the Python source code used to perform the automated information gathering.
+
+### Security Report
+
+```text
+evidence/security-report.txt
+```
+
+This file contains the output generated by the script.
+
+The combination of the source code and generated report provides evidence of both:
+
+1. How the security information was collected
+2. What information was collected
+
+---
+
+## Repository Structure
+
+The Lab 08 directory is structured as follows:
+
+```text
+08-python-security/
+│
+├── README.md
+│
+├── Script/
+│   └── security_report.py
+│
+└── evidence/
+    └── security-report.txt
+```
+
+### `README.md`
+
+Documents the purpose, methodology, execution, results, skills, and learning outcomes of the lab.
+
+### `Script/security_report.py`
+
+Python automation script responsible for collecting system and network information.
+
+### `evidence/security-report.txt`
+
+Generated report containing the output from the security automation script.
+
+---
+
+## Security Relevance
+
+Python is widely used in cybersecurity for automation, data processing, investigation, and security tooling.
+
+Security analysts regularly need to collect and process information from systems during:
+
+- Security investigations
+- Incident response
+- System triage
+- Threat hunting
+- Security monitoring
+- Troubleshooting
+- Evidence collection
+
+Automating repetitive tasks can improve efficiency, consistency, and repeatability.
+
+The script developed in this lab provides a foundation for more advanced security automation.
+
+---
+
+## SOC Relevance
+
+The skills demonstrated in this exercise are relevant to Security Operations Centre (SOC) environments.
+
+For example, similar Python techniques can be extended to automate:
+
+- Log parsing
+- Failed-login detection
+- IOC extraction
+- Suspicious-process identification
+- File integrity monitoring
+- Hash calculation
+- Network information gathering
+- Alert enrichment
+- Security report generation
+- SIEM data processing
+
+The lab therefore represents a progression from basic Linux administration towards automated security operations.
+
+---
+
+## Skills Demonstrated
+
+This lab demonstrates practical experience with:
+
+- Python 3
+- Python scripting
+- Linux command-line operations
+- Command execution from Python
+- System information gathering
+- Network information gathering
+- Routing analysis
+- Listening-service enumeration
+- Disk and memory analysis
+- Security automation
+- Report generation
+- Evidence collection
+- Technical documentation
+
+---
+
+## Key Learning Outcomes
+
+This exercise demonstrated how Python can be used to transform repetitive Linux administration tasks into a reusable security workflow.
+
+The main lessons learned were:
+
+### 1. Automation
+
+Python can automate repetitive command-line tasks and reduce the amount of manual work required during system assessment.
+
+### 2. Repeatability
+
+A script provides a consistent process that can be executed again whenever the same information is required.
+
+### 3. Evidence Collection
+
+Saving the output to `security-report.txt` creates a persistent record of the information collected during the assessment.
+
+### 4. Security Analysis
+
+Basic system and network information can provide useful context during security investigations and incident-response activities.
+
+### 5. Foundation for Advanced Automation
+
+The techniques demonstrated here can be expanded into more sophisticated cybersecurity tools and workflows.
+
+---
+
+## Limitations
+
+This lab represents a foundational security-automation exercise rather than a comprehensive security assessment.
+
+The script does not replace enterprise security technologies such as:
+
+- SIEM platforms
+- Endpoint Detection and Response (EDR)
+- Network Intrusion Detection Systems (IDS)
+- Network Intrusion Prevention Systems (IPS)
+- Vulnerability scanners
+- Enterprise monitoring platforms
+- Professional incident-response tooling
+
+The generated report represents a snapshot of the system at the time the script was executed.
+
+The script also does not perform exploitation or attempt to compromise the target system.
+
+---
+
+## Future Improvements
+
+The automation can be extended in future labs to provide additional security capabilities.
+
+Potential improvements include:
+
+- Automated SSH log analysis
+- Failed authentication detection
+- Suspicious process detection
+- File integrity monitoring
+- IOC matching
+- File hashing
+- Automated Nmap integration
+- JSON report generation
+- CSV report generation
+- Timestamped reports
+- Automated alert generation
+- Log correlation
+- Basic incident-response workflows
+- SIEM integration
+
+These improvements would provide a natural progression toward more advanced SOC and incident-response automation.
+
+---
+
+## Lab Outcome
+
+The lab successfully demonstrated the development and execution of a Python-based security automation script.
+
+The script collected security-relevant system and network information and generated a consolidated report containing the results.
+
+The completed workflow consisted of:
+
+```text
+Python Environment
+        |
+        v
+Security Automation Script
+        |
+        v
+System & Network Information
+        |
+        v
+Consolidated Security Report
+        |
+        v
+Evidence Preservation
+```
+
+This demonstrates practical application of Python, Linux administration, security information gathering, automation, and technical documentation.
+
+---
+
+## Evidence Location
+
+All Lab 08 evidence is contained within the lab directory:
+
+```text
+labs/08-python-security/
+```
+
+Specifically:
+
+```text
+labs/08-python-security/
+│
+├── Script/
+│   └── security_report.py
+│
+├── evidence/
+│   └── security-report.txt
+│
+└── README.md
+```
+
+---
+
+## Disclaimer
+
+All activities documented in this lab were performed against systems that I own or have explicitly configured for educational purposes within my controlled cybersecurity home laboratory.
+
+The techniques and tools are used for learning, defensive security, system administration, and authorized testing only.
